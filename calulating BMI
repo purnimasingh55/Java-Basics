@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class cal_gcd {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter the first number: ");
+		int n1 = input.nextInt();
+		System.out.print("Enter the second number: ");
+		int n2 = input.nextInt();
+		int gcd = 1;
+		int a = 2; //possible gcd
+		//for loop can also be used as:
+		//for(int a = 2; a<=n1/2; && a<=n2/2; a++ ) {
+		//	if(n1%a==0&&n2%a==0) {
+		//		gcd=a;
+		//	}
+		//}
+		while(a<=n1 && a<=n2) {
+			if( n1%a == 0 && n2%a == 0) {
+				gcd = a; //updating gcd
+			}
+			a++;
+		}
+		System.out.println("The Greatest Common Factor of " +n1+ " and " +n2 + " is " +gcd);
+		
+	}
+}
