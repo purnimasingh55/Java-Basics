@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class temp_conertion {
+	public static void main(String[] args) {
+		Scanner x = new Scanner(System.in);
+	    System.out.println("Enter the temprature in Fahrenheit: ");
+	    double f = x.nextDouble();
+	    double c = (5.0 / 9)* (f-32);
+	    System.out.println("The temperature in Celcious is: " +c);
+	}
+}
