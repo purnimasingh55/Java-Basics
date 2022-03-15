@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class lear_year {
+	public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+	System.out.print("Enter any year: ");
+	int n = input.nextInt();
+	boolean isleap_year = (n%4 == 0 && n % 100 != 0 ) || (n%400 ==0) ;
+	System.out.println( " Is "+n+ "a leap year? " +isleap_year);
+    }
+	
+	
+}
