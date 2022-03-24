@@ -1,0 +1,37 @@
+//Book program
+public class Prime_number {
+	public static void main(String[] args) {
+		final int num_of_prime = 50;
+		final int num_of_prime_per_line = 10;
+		int count = 0;
+		int number = 2;
+		
+		System.out.print("The first five prime numbers are: ");
+		
+		// Repeatedly find prime number
+		while (count<num_of_prime) {
+			//Assume that the number is prime
+			boolean isPrime = true; //Is the current number prime?
+			//test weather the number is prime
+			for(int divisor = 2; divisor <= number / 2; divisor++) {
+				if(number % divisor ==0) {
+					//if true then no. is not prime
+					isPrime = false; 
+					break;
+				}
+			}
+			if(isPrime) {
+				count++; //increase the counter;
+				if(count % num_of_prime_per_line == 0) {
+					//Display the number and advance to the new line
+					System.out.println(number);
+				}
+				else {
+					System.out.println( number + " ");
+				}
+				
+			}
+			number++;
+		}
+	}
+}
