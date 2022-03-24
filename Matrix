@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Matrix {
+	public static void main() {
+		int a[][] = null;
+		a = new int [3][3];
+		//taking input from the user
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the 3*3 Materix: ");
+		for(int i = 0; i<3; i++) {
+			for(int j = 0; j<3; j++) {
+				a[i][j] = input.nextInt();
+			}
+		}
+		//Displaying the matrix
+		System.out.println("The entered matrix is: ");
+		for(int i = 0; i<3; i++) {
+			for(int j = 0; j<3; j++) {
+				System.out.println(+a[i][j]);
+			}
+			System.out.println();
+		}
+		
+	}
+}
