@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class Display_time {
+	Scanner t = new Scanner(System.in);
+	//Promt the user for input
+	System.out.print("Enter the integer for seconds: ");
+	int second = t.nextInt();
+	int minutes = second %60;
+	int remainingSeconds = second % 60;
+	System.out.println(second + " Second is "+ minutes +" minutes and "+ remainingSeconds+ " seconds");
+}
